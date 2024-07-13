@@ -1,0 +1,119 @@
+{
+  "configVersion": 1,
+  "timestamp": 1720880363026,
+  "index": "/ang17-mat-signal-demo/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ang17-mat-signal-demo/chunk-Q5J5A3LR.js",
+        "/ang17-mat-signal-demo/chunk-SLR3HXVG.js",
+        "/ang17-mat-signal-demo/favicon.ico",
+        "/ang17-mat-signal-demo/index.html",
+        "/ang17-mat-signal-demo/main-7IPWIXCS.js",
+        "/ang17-mat-signal-demo/polyfills-7NI4OVGA.js",
+        "/ang17-mat-signal-demo/styles-JBWRGZK6.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/ang17-mat-signal-demo/assets/json-schema/references.json",
+        "/ang17-mat-signal-demo/assets/json-schema/schema_dependencies.json",
+        "/ang17-mat-signal-demo/assets/json-schema/temp.json",
+        "/ang17-mat-signal-demo/media/material-icons-JLIDJUWE.woff",
+        "/ang17-mat-signal-demo/media/material-icons-LEZCGFVT.woff2",
+        "/ang17-mat-signal-demo/media/material-icons-outlined-7BWLPMFK.woff2",
+        "/ang17-mat-signal-demo/media/material-icons-outlined-PCUTWIDZ.woff",
+        "/ang17-mat-signal-demo/media/material-icons-round-SLOHZIXU.woff",
+        "/ang17-mat-signal-demo/media/material-icons-round-WEHMTW23.woff2",
+        "/ang17-mat-signal-demo/media/material-icons-sharp-HCCYMPXE.woff2",
+        "/ang17-mat-signal-demo/media/material-icons-sharp-U4OLFP3G.woff",
+        "/ang17-mat-signal-demo/media/material-icons-two-tone-LCGWGE2N.woff",
+        "/ang17-mat-signal-demo/media/material-icons-two-tone-M5N5K6F5.woff2",
+        "/ang17-mat-signal-demo/media/roboto-cyrillic-400-normal-DH4TKATE.woff",
+        "/ang17-mat-signal-demo/media/roboto-cyrillic-400-normal-FWOJ2YEY.woff2",
+        "/ang17-mat-signal-demo/media/roboto-cyrillic-ext-400-normal-26BHVYZO.woff2",
+        "/ang17-mat-signal-demo/media/roboto-cyrillic-ext-400-normal-ALQYG4VR.woff",
+        "/ang17-mat-signal-demo/media/roboto-greek-400-normal-4O2YO26M.woff",
+        "/ang17-mat-signal-demo/media/roboto-greek-400-normal-MPTNYGBL.woff2",
+        "/ang17-mat-signal-demo/media/roboto-greek-ext-400-normal-2F7V6K4G.woff",
+        "/ang17-mat-signal-demo/media/roboto-greek-ext-400-normal-FNKH33MZ.woff2",
+        "/ang17-mat-signal-demo/media/roboto-latin-400-normal-23KM663I.woff",
+        "/ang17-mat-signal-demo/media/roboto-latin-400-normal-6KEU5XHX.woff2",
+        "/ang17-mat-signal-demo/media/roboto-latin-ext-400-normal-EGV4RSGY.woff2",
+        "/ang17-mat-signal-demo/media/roboto-latin-ext-400-normal-SYALJJTN.woff",
+        "/ang17-mat-signal-demo/media/roboto-vietnamese-400-normal-WM45SJXN.woff",
+        "/ang17-mat-signal-demo/media/roboto-vietnamese-400-normal-ZFP4AYPR.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ang17-mat-signal-demo/assets/json-schema/references.json": "263837b00acee9dd667a45d89e47df5b0f32a067",
+    "/ang17-mat-signal-demo/assets/json-schema/schema_dependencies.json": "41d68fcfaf7a20a70cab8dc1d7e8abdff9be7d26",
+    "/ang17-mat-signal-demo/assets/json-schema/temp.json": "a5b77865907b09a6d83c1e99d36e1c2d93077820",
+    "/ang17-mat-signal-demo/chunk-Q5J5A3LR.js": "60b53d9492b6c31b872e6ee26d88004c8824a1aa",
+    "/ang17-mat-signal-demo/chunk-SLR3HXVG.js": "ecef8852c50b0c8831950c7f6211dadde38da974",
+    "/ang17-mat-signal-demo/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/ang17-mat-signal-demo/index.html": "34a011fbaeb11cfa5b3e3fde9825eeb7a28aa793",
+    "/ang17-mat-signal-demo/main-7IPWIXCS.js": "f2101a428c81c381981fe5c3efde23d41a3f9486",
+    "/ang17-mat-signal-demo/media/material-icons-JLIDJUWE.woff": "e4bb7c1e40d3febee58df963db276b2bf68c117b",
+    "/ang17-mat-signal-demo/media/material-icons-LEZCGFVT.woff2": "0bc0c675480d94ec7e8609dda6227f88c5d08d2c",
+    "/ang17-mat-signal-demo/media/material-icons-outlined-7BWLPMFK.woff2": "2f9e28ab559782402f27332633c843c40209d95a",
+    "/ang17-mat-signal-demo/media/material-icons-outlined-PCUTWIDZ.woff": "b52ccd8fca4199d257b2a9fe377db29862f2853e",
+    "/ang17-mat-signal-demo/media/material-icons-round-SLOHZIXU.woff": "c41bfee3f01218e18d53f4f4cac00f385ac9fbb1",
+    "/ang17-mat-signal-demo/media/material-icons-round-WEHMTW23.woff2": "abe05e0641f1050fbe00ef0dbb10c5ea72c26cff",
+    "/ang17-mat-signal-demo/media/material-icons-sharp-HCCYMPXE.woff2": "cf1c7b4d066d18af44cf7bc664dd2e46652a3a30",
+    "/ang17-mat-signal-demo/media/material-icons-sharp-U4OLFP3G.woff": "829cb48cb2dd17ae5e425b82dc186eb670694a10",
+    "/ang17-mat-signal-demo/media/material-icons-two-tone-LCGWGE2N.woff": "02225d888afe4eebc7312b7432878dc8aef1f50f",
+    "/ang17-mat-signal-demo/media/material-icons-two-tone-M5N5K6F5.woff2": "296ff0bff395a77c2e33e7e31fffe73980bd93cf",
+    "/ang17-mat-signal-demo/media/roboto-cyrillic-400-normal-DH4TKATE.woff": "9219fcf4e6e2eb9902331790b8384fb74f00e677",
+    "/ang17-mat-signal-demo/media/roboto-cyrillic-400-normal-FWOJ2YEY.woff2": "112a2fc5f4ff9b85ee3a706fa9b8c47f79b05933",
+    "/ang17-mat-signal-demo/media/roboto-cyrillic-ext-400-normal-26BHVYZO.woff2": "dd22a41fa21ec4a4a8d29fd369d9bee919cb98ac",
+    "/ang17-mat-signal-demo/media/roboto-cyrillic-ext-400-normal-ALQYG4VR.woff": "c7c2bad9d258b1c1da7ddabfdfe4760550c524ff",
+    "/ang17-mat-signal-demo/media/roboto-greek-400-normal-4O2YO26M.woff": "4d3eb9988caee64ae957ccd3623c560dde7d89ba",
+    "/ang17-mat-signal-demo/media/roboto-greek-400-normal-MPTNYGBL.woff2": "7cfbc415c45b2274a5997255fbec0fb53bbe327d",
+    "/ang17-mat-signal-demo/media/roboto-greek-ext-400-normal-2F7V6K4G.woff": "5bef53a7c3ac26a1775242457f4915fdaf7c5d3f",
+    "/ang17-mat-signal-demo/media/roboto-greek-ext-400-normal-FNKH33MZ.woff2": "4df39eaa5d1a70ff3b5d288a74bf7a468e7583ef",
+    "/ang17-mat-signal-demo/media/roboto-latin-400-normal-23KM663I.woff": "53c9df3243c24df8728a0dd5be3c9c82ab7a38af",
+    "/ang17-mat-signal-demo/media/roboto-latin-400-normal-6KEU5XHX.woff2": "7ca9c5967f3bb8bffeab24b639b49c1e7d03fa52",
+    "/ang17-mat-signal-demo/media/roboto-latin-ext-400-normal-EGV4RSGY.woff2": "b743548770c46d905ae1ba06310bc001c587fe8e",
+    "/ang17-mat-signal-demo/media/roboto-latin-ext-400-normal-SYALJJTN.woff": "b7e2550f960bdab656aa64af9551db92cc955b0c",
+    "/ang17-mat-signal-demo/media/roboto-vietnamese-400-normal-WM45SJXN.woff": "85a13eb09db35619c525b87a461e5ae0a5061af9",
+    "/ang17-mat-signal-demo/media/roboto-vietnamese-400-normal-ZFP4AYPR.woff2": "109cd4c5435bd6614391bb8722c47c287c96b2ec",
+    "/ang17-mat-signal-demo/polyfills-7NI4OVGA.js": "fe9f024576f21ff6314cf8f8332cde58b9a12416",
+    "/ang17-mat-signal-demo/styles-JBWRGZK6.css": "73ce97a87ef3b7f4e4e87cfa8e1c527ac162b15b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
