@@ -1,0 +1,203 @@
+{
+  "$id": "references",
+  "definitions": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "street_address": {
+          "type": "string",
+          "title": "Street address (JS)"
+        },
+        "provinance": {
+          "type": "select",
+          "title": "Provinance (JS)",
+          "widget": {
+            "formlyConfig": {
+              "props": {
+                "optionsKey": "continents"
+              }
+            }
+          }
+        },
+        "country": {
+          "type": "select",
+          "title": "Country (JS)",
+          "widget": {
+            "formlyConfig": {
+              "props": {
+                "optionsKey": "countries",
+                "dependentKeyPath": [
+                  "provinance"
+                ],
+                "hideOnDependentEmpty": true
+              }
+            }
+          }
+        },
+        "state": {
+          "type": "select",
+          "title": "State (JS)",
+          "widget": {
+            "formlyConfig": {
+              "key": "state",
+              "props": {
+                "optionsKey": "states",
+                "dependentKeyPath": [
+                  "country"
+                ],
+                "hideOnDependentEmpty": true
+              }
+            }
+          }
+        },
+        "city": {
+          "type": "select",
+          "title": "City (JS)",
+          "widget": {
+            "formlyConfig": {
+              "key": "city",
+              "props": {
+                "optionsKey": "cities",
+                "dependentKeyPath": [
+                  "country",
+                  "state"
+                ],
+                "hideOnDependentEmpty": true
+              }
+            }
+          }
+        },
+        "zip": {
+          "type": "string",
+          "title": "Zip",
+          "widget": {
+            "formlyConfig": {
+              "expressions": {
+                "props.pattern": "model.country === 1 ? '[\\\\d]{5}' : '[\\\\d]{6}'",
+                "props.pattern_message": "model.country === 1 ? 'Should be 5 digits' : 'Should be 6 digits'"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "street_address",
+        "city",
+        "state"
+      ],
+      "widget": {
+        "formlyConfig": {
+          "className": "mxw2"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "title": "Child",
+      "widget": {
+        "formlyConfig": {
+          "className": "mxw1",
+          "props": {
+            "isNested": true,
+            "childKey": "children"
+          },
+          "expressions": {
+            "props.description": "((model.name || '') + '_' + (model.__$order ?? '')+'_'+ (model.__$level ?? ''))"
+          }
+        }
+      },
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "dob": {
+          "type": "date",
+          "title": "DOB",
+          "widget": {
+            "formlyConfig": {
+              "type": "datepicker",
+              "expressions": {
+                "model.age": "model.dob ? ( (new Date().getFullYear()) - ((new Date(model.dob??0))?.getFullYear?.()??0)) : null"
+              },
+              "props": {
+                "required": true
+              }
+            }
+          }
+        },
+        "tob": {
+          "type": "time",
+          "title": "Time Of Birth",
+          "widget": {
+            "formlyConfig": {
+              "props": {
+                "required": true
+              }
+            }
+          }
+        },
+        "age": {
+          "type": "number",
+          "title": "Age = (today - dob)",
+          "maximum": 100,
+          "minimum": 0,
+          "widget": {
+            "formlyConfig": {
+              "props": {
+                "readonly": true
+              }
+            }
+          }
+        },
+        "phone": {
+          "type": "array",
+          "title": "Phone",
+          "items": {
+            "$ref": "#/definitions/phone_number"
+          },
+          "minItems": 1,
+          "maxItems": 3,
+          "widget": {
+            "formlyConfig": {
+              "fieldGroupClassName": "df-i-r gcn",
+              "className": "mnw1 cc",
+              "props": {
+                "required": true
+              }
+            }
+          }
+        },
+        "children": {
+          "type": "array",
+          "title": "Children",
+          "items": {
+            "$ref": "#/definitions/node"
+          }
+        }
+      }
+    },
+    "phone_number": {
+      "type": "mobile"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "billing_address": {
+      "title": "Billing address (From reference definition's address)",
+      "$ref": "#/definitions/address"
+    },
+    "shipping_address": {
+      "title": "Shipping address (From appConfig's presetProvider)",
+      "type": "#address2"
+    },
+    "residential_address": {
+      "title": "Residential address (From address.preset.ts)",
+      "type": "#address3"
+    },
+    "tree": {
+      "title": "Recursive references",
+      "$ref": "#/definitions/node"
+    }
+  }
+}
